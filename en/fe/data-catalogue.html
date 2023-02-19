@@ -1,0 +1,505 @@
+
+
+<html>
+
+
+<!-- Mirrored from profile.damakmun.gov.np/en/fe/data-catalogue by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Feb 2023 16:57:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Digital municipal profile that includes details of all socio-economic, institutional and spatial information of its inhabitants as well as all municipal services. Data driven planning tool for interactive municipal information management system designed and developed by Map Nepal Engineering Consultancy pvt ltd with coordination with COMMITTED Nepal">
+    <meta name="keywords" content="digital Damak ,smart local government,digital municipality, digital, smart municipality, municipal data system, gis, municipal gis system, geoportal, municipal data management system,geonepal, mapnepal, e-municipality">
+    <meta name="author" content="Map Nepal, Krishna Kafle">
+    <link rel="shortcut icon" href="../../static/backend/library/images/logo-dark.png">
+
+    <!-- App favicon -->
+
+    <title>Data Catalogue</title>
+
+
+    
+
+    
+
+
+    <!-- third party css -->
+    <link href="../../static/backend/library/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css"
+        rel="stylesheet" type="text/css" />
+    <link href="../../static/backend/library/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css"
+        rel="stylesheet" type="text/css" />
+    <link href="../../static/backend/library/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css"
+        rel="stylesheet" type="text/css" />
+    <link href="../../static/backend/library/libs/datatables.net-select-bs4/css/select.bootstrap4.min.css"
+        rel="stylesheet" type="text/css" />
+    <!-- third party css end -->
+
+
+
+    <link href="../../static/backend/library/css/bootstrap.min.css" rel="stylesheet" type="text/css"
+        id="bs-default-stylesheet" />
+    <link href="../../static/backend/library/css/app.min.css" rel="stylesheet" type="text/css"
+        id="app-default-stylesheet" />
+
+    <link href="../../static/backend/library/css/bootstrap-dark.min.css" rel="stylesheet" type="text/css"
+        id="bs-dark-stylesheet" disabled />
+    <link href="../../static/backend/library/css/app-dark.min.css" rel="stylesheet" type="text/css"
+        id="app-dark-stylesheet" disabled />
+
+    <!-- icons -->
+    <link href="../../static/backend/library/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- ol -->
+    <link href="../../static/backend/library/libs/ol/ol.css" rel="stylesheet" type="text/css" />
+
+    <link href="../../static/backend/library/css/ol-ext/ol-ext.css" rel="stylesheet" type="text/css" />
+
+
+    <link href="../../static/frontend/custom/css/style.css" rel="stylesheet" type="text/css" />
+
+    <!--script-->
+
+    <script src="../../static/backend/library/js/jquery-3.1.1.min.js"></script>
+
+
+</head>
+
+<body data-layout-mode="horizontal" data-layout='{"mode": "light", "width": "fluid", "menuPosition": "fixed", "topbar": {"color": "dark"}, "showRightSidebarOnPageLoad": true}'>
+
+
+    <div id="wrapper">
+
+
+        
+
+ <div class="navbar-custom">
+    <div class="container-fluid">
+        <ul class="list-unstyled topnav-menu float-right mb-0">
+            
+            
+<li class="dropdown languages-list topbar-dropdown">
+  <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light"
+    data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"
+    >
+    <span class="pro-user-name ml-1">
+      Language<i class="mdi mdi-chevron-down"></i>
+    </span>
+  </a>
+  <div class="dropdown-menu dropdown-menu-right profile-dropdown">
+    
+    
+    
+    <form action="https://profile.damakmun.gov.np/en/i18n/setlang/" method="POST">
+      <input type="hidden" name="csrfmiddlewaretoken" value="G6WUo0aQbzgIbSYPZ8leJgZw9OPxgoXddMIh4MoHqepEuxp1z5YcOb2HekprrKiJ">
+      <input name="next" type="hidden" value="">
+      <select class="dropdown-item notify-item" name="language" onchange="this.form.submit()">
+        
+        <option value="en" selected>
+        English (en)
+        </option>
+        
+        <option value="ne">
+        Nepali (ne)
+        </option>
+        
+      </select>
+    </form>
+  </div>
+</li>
+
+            
+            <li class="nav-item ">
+                <a class="nav-link dropdown-toggle arrow-none" href="../login/index.html" role="button"
+                    aria-haspopup="true" aria-expanded="false">
+                  <i class="fe-package mr-1"></i>Login
+                </a>
+            </li>
+            
+
+
+        </ul>
+        <!-- LOGO -->
+        <div class="logo-box">
+            <a href="../index.html" class="logo logo-light text-center">
+                <!-- <span class="logo-sm">
+                    <img src="/static/backend/library/images/logo-dark.png" alt="" height="30"> Waling Municipality
+                </span>
+                <span class="logo-lg">
+                    <img src="/static/backend/library/images/logo-dark.png" alt="" height="50"> Waling Municipality
+                </span> -->
+                <span class="logo-sm">
+                  <img src="../../static/backend/library/images/logo-dark.png" alt="" height="30">
+                </span>
+                <span class="logo-lg">
+                  <img src="../../static/backend/library/images/logo-dark.png" alt="" height="50">Damak Municipality
+                </span>
+            </a>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+
+
+ <div class="topnav">
+     <div class="container-fluid">
+         <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
+
+             <div class="collapse navbar-collapse" id="topnav-menu-content">
+                 <ul class="navbar-nav">
+
+                     <li class="nav-item ">
+                         <a class="nav-link dropdown-toggle arrow-none" href="../index.html" role="button"
+                             aria-haspopup="true" aria-expanded="false">
+                           <i class="fe-airplay mr-1"></i> Home
+                         </a>
+
+                     </li>
+                     <li class="nav-item ">
+                         <a class="nav-link dropdown-toggle arrow-none" href="../map.html" role="button"
+                             aria-haspopup="true" aria-expanded="false">
+                           <i class="fe-book-open mr-1"></i> Map
+                         </a>
+
+                     </li>
+                     <li class="nav-item ">
+                         <a class="nav-link dropdown-toggle arrow-none" href="data-catalogue.html" role="button"
+                             aria-haspopup="true" aria-expanded="false">
+                           <i class="fe-book-open mr-1"></i>Catalogue
+                         </a>
+
+                     </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-apps-finance" role="button"
+                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <i class="fe-grid mr-1"></i> Finance <div class="arrow-down"></div>
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="topnav-apps-finance">
+                             <a href="../public-finance/fe/project/index.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 Project
+                             </a>
+                             <a href="../public-finance/fe/expenditure/index.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 Expenditure
+                             </a>
+                             <a href="../public-finance/fe/revenue/index.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 Revenue
+                             </a>
+                         </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-apps" role="button"
+                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <i class="fe-grid mr-1"></i> Service
+                             <div class="arrow-down"></div>
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="topnav-apps">
+                             
+                             
+                             <a href="../institution/fe-category/1.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 Economic Development
+                             </a>
+                             
+                             <a href="../institution/fe-category/2.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 Infrastructure
+                             </a>
+                             
+                             <a href="../institution/fe-category/3.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 Governance
+                             </a>
+                             
+                             <a href="../institution/fe-category/5.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 Education
+                             </a>
+                             
+                             <a href="../institution/fe-category/6.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 Health
+                             </a>
+                             
+                             <a href="../institution/fe-category/7.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 Public works
+                             </a>
+                             
+                             <a href="../institution/fe-category/8.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 Cultural Heritage
+                             </a>
+                             
+                             <a href="../institution/fe-category/4.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 Natural Resources
+                             </a>
+                             
+                             <a href="../institution/fe-category/10.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 ATM
+                             </a>
+                             
+                             
+                         </div>
+                     </li>
+                     <li class="nav-item ">
+                         <a class="nav-link dropdown-toggle arrow-none" href="../about.html" role="button"
+                             aria-haspopup="true" aria-expanded="false">
+                           <i class="fe-sidebar mr-1"></i> About
+                         </a>
+
+                     </li>
+
+
+
+
+
+
+                 </ul> <!-- end navbar-->
+             </div> <!-- end .collapsed-->
+         </nav>
+     </div> <!-- end container-fluid -->
+ </div> <!-- end topnav-->
+
+
+
+
+
+        <div class="content-page" style="padding: 70px 15px 65px 15px;">
+            <div class="content">
+                <div class="container-fluid">
+
+                    
+
+
+<style>
+    .card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2em;
+        margin: 1em;
+    }
+    .card-wrapper > * {
+        margin: 0;
+    }
+</style>
+<!-- start page title -->
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box">
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                  <li class="breadcrumb-item"><a href="https://profile.damakmun.gov.np/login?next=/en/dashboard">Damak</a></li>
+                  <li class="breadcrumb-item "><a href="https://profile.damakmun.gov.np/login?next=/en/dashboard">Dashboard</a></li>
+                  <li class="breadcrumb-item active">Data Catalogue</li>
+                </ol>
+            </div>
+            <h4 class="page-title">Data </h4>
+        </div>
+    </div>
+</div>
+<!-- end page title -->
+
+
+
+<div class="card-wrapper" style="">
+    <div class="card-box ribbon-box">
+      <div class="ribbon ribbon-primary float-right"><i class="mdi mdi-access-point mr-1"></i> House</div>
+      <h5 class="text-primary float-left mt-0"><a href="data-catalogue/house-level.html">House Level</a></h5>
+        <div class="ribbon-content">
+            <p class="mb-0">
+              Organized collection of House level data represented in the form of infographics, charts and tables for better understanding of municipal infrastructure and service. Representation of this data is an attempt to enhance the spatial and socio-economic relationship between the structure where ward inhabitants reside and work and the services provided by the municipality.
+            </p>
+        </div>
+    </div>
+
+    <div class="card-box ribbon-box">
+      <div class="ribbon ribbon-success float-right"><i class="mdi mdi-access-point mr-1"></i> Household</div>
+      <h5 class="text-success float-left mt-0"><a href="../household/fe/data-catalogue/household-level.html">Household Level</a></h5>
+        <div class="ribbon-content">
+            <p class="mb-0">
+              Organized collection of household level data represented in the form of infographics, charts and tables for better understanding of municipal infrastructure and services towards the families. Representation of this data is an attempt to enhance the spatial and socio-economic relationship between each household and the services provided by the municipality.
+            </p>
+        </div>
+    </div>
+
+    <div class="card-box ribbon-box">
+      <div class="ribbon ribbon-info float-right"><i class="mdi mdi-access-point mr-1"></i> Individual</div>
+      <h5 class="text-info float-left mt-0"><a href="../individual/fe/data-catalogue/individual-level.html">Individual Level</a></h5>
+        <div class="ribbon-content">
+            <p class="mb-0">
+              Organized collection of Individual level data represented in the form of infographics, charts and tables for better understanding of municipal infrastructure and services towards them. Representation of this data is an attempt to enhance the spatial and socio-economic relationship between the inhabitants of each structure/member of household where they either reside or work, and the services provided by the municipality.
+            </p>
+        </div>
+    </div>
+
+    <div class="card-box ribbon-box">
+      <div class="ribbon ribbon-info float-right"><i class="mdi mdi-access-point mr-1"></i> Absentee</div>
+      <h5 class="text-info float-left mt-0"><a href="../absentee/fe/data-catalogue/absentee-level.html">Absentee Level</a>
+        </h5>
+        <div class="ribbon-content">
+            <p class="mb-0">
+              Organized collection of absentee data represented in the form of infographics charts and tables for better understanding of municipal infrastructure and services. Representation of this data is an attempt to enhance the spatial and socio-economic relationship between the municipal services and population that are a member of the household surveyed and legally present but absent at the time of data collection.
+            </p>
+        </div>
+    </div>
+
+    <div class="card-box ribbon-box">
+      <div class="ribbon ribbon-info float-right"><i class="mdi mdi-access-point mr-1"></i> Business</div>
+      <h5 class="text-info float-left mt-0"><a href="../business/fe/data-catalogue/business-level.html">Business Level</a>
+        </h5>
+        <div class="ribbon-content">
+            <p class="mb-0">
+              Organized collection of business data represented in the form of infographics, charts and tables for better understanding of municipal infrastructure and services towards their growth. Representation of this data is an attempt to enhance the spatial and socio-economic relationship between the municipal services and businesses that are a critical part of the municipality’s local economic development.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+                </div><!-- container -->
+            </div><!-- content -->
+
+        </div><!-- End Page content -->
+
+
+<footer class="footer_area footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="single_ftr">
+                    <h4 class="sf_title">About</h4>
+                    <ul>
+                      <li>Damak Municipality, Jhapa District</li>
+                      <li>Province 1</li>
+                      <li>Phone: 023580137</li>
+                      <li>ict.damakmun@gmail.com</li>
+                    </ul>
+                </div>
+            </div> <!--  End Col -->
+
+            <div class="col-md-3 col-sm-6">
+                <div class="single_ftr">
+                    <h4 class="sf_title">Information</h4>
+                    <ul>
+                      <li><a href="../data.html">About Us</a></li>
+                      <li><a href="../map.html">Map Details</a></li>
+                      <li><a href="../data.html">Data Details</a></li>
+                      <li><a href="../about.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div> <!--  End Col -->
+
+
+
+            <div class="col-md-5 col-sm-6">
+                <div class="single_ftr">
+                    <div class="single_ftr">
+                      <h4 class="sf_title">Damak Municipality</h4>
+                    <!-- <div class="">
+
+
+                        <a href="/en/" class="text-center">
+                            <span class="logo-lg">
+                                <img src="/static/backend/library/images/smart.png" alt="" height="50">
+                            </span>
+                        </a>
+                    </div> -->
+                    <div class="newsletter_form">
+                        <p>
+                          
+                          Damak is one of the oldest municipalities in Jhapa District in Province 1 of Nepal.
+                          It is situated between the Ratuwa River in the east and the Maawa River in the west.
+                          It has Sivalik Hills in its north and ends with the intersection of Ratuwa River and
+                          Mawa River in the south. Mahendra Highway (longest highway of Nepal) crosses this municipality
+                          nearly bisecting it. It is the largest city in Jhapa District as well as in Mechi zone.
+                          
+
+                        </p>
+
+                    </div>
+                </div>
+            </div> <!--  End Col -->
+
+        </div>
+    </div>
+
+
+</footer>
+
+
+
+    </div><!-- END wrapper -->
+    <!-- end page -->
+
+
+    <!-- Vendor js -->
+    <script src="../../static/backend/library/js/vendor.min.js"></script>
+
+
+    <!-- Plugins js-->
+    <script src="../../static/backend/library/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+
+
+
+
+
+
+    <!-- third party js -->
+    <script src="../../static/backend/library/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/backend/library/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../../static/backend/library/libs/datatables.net-responsive/js/dataTables.responsive.min.js">
+    </script>
+    <script src="../../static/backend/library/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js">
+    </script>
+    <script src="../../static/backend/library/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../../static/backend/library/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+    <script src="../../static/backend/library/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../../static/backend/library/libs/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="../../static/backend/library/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../../static/backend/library/libs/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="../../static/backend/library/libs/datatables.net-select/js/dataTables.select.min.js"></script>
+    <script src="../../static/backend/library/libs/pdfmake/build/pdfmake.min.html"></script>
+    <script src="../../static/backend/library/libs/pdfmake/build/vfs_fonts.html"></script>
+    <!-- third party js ends -->
+
+    <!-- Datatables init -->
+    <script src="../../static/backend/library/js/pages/datatables.init.js"></script>
+
+    <!-- App js -->
+    <script src="../../static/backend/library/js/app.min.js"></script>
+    <script src="../../static/frontend/custom/js/slider.js"></script>
+
+    <!-- ol -->
+    <script src="../../static/backend/library/libs/ol/ol.js"></script>
+    <script src="../../static/backend/library/js/ol-ext/ol-ext.js"></script>
+
+    <script src="../../static/backend/library/js/jquery-ui.min.js"></script>
+    <script src="../../static/backend/library/js/jquery.validate.min.js"></script>
+
+    <script src="../../static/backend/library/js/bootbox.min.js"></script>
+    <!-- custom -->
+    <script src="../../static/frontend/custom/js/layers.js"></script>
+    <script src="../../static/frontend/custom/js/map.js"></script>
+    <script src="../../static/frontend/custom/js/main.js"></script>
+
+    
+
+    
+
+
+
+</body>
+
+
+<!-- Mirrored from profile.damakmun.gov.np/en/fe/data-catalogue by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Feb 2023 16:57:25 GMT -->
+</html>

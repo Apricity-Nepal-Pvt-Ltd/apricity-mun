@@ -1,0 +1,779 @@
+
+
+<html>
+
+
+<!-- Mirrored from profile.damakmun.gov.np/en/household/fe/data-catalogue/household-level by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Feb 2023 16:57:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Digital municipal profile that includes details of all socio-economic, institutional and spatial information of its inhabitants as well as all municipal services. Data driven planning tool for interactive municipal information management system designed and developed by Map Nepal Engineering Consultancy pvt ltd with coordination with COMMITTED Nepal">
+    <meta name="keywords" content="digital Damak ,smart local government,digital municipality, digital, smart municipality, municipal data system, gis, municipal gis system, geoportal, municipal data management system,geonepal, mapnepal, e-municipality">
+    <meta name="author" content="Map Nepal, Krishna Kafle">
+    <link rel="shortcut icon" href="../../../../static/backend/library/images/logo-dark.png">
+
+    <!-- App favicon -->
+
+    <title>Household | Data Catalogue</title>
+
+
+    
+
+    
+
+
+    <!-- third party css -->
+    <link href="../../../../static/backend/library/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css"
+        rel="stylesheet" type="text/css" />
+    <link href="../../../../static/backend/library/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css"
+        rel="stylesheet" type="text/css" />
+    <link href="../../../../static/backend/library/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css"
+        rel="stylesheet" type="text/css" />
+    <link href="../../../../static/backend/library/libs/datatables.net-select-bs4/css/select.bootstrap4.min.css"
+        rel="stylesheet" type="text/css" />
+    <!-- third party css end -->
+
+
+
+    <link href="../../../../static/backend/library/css/bootstrap.min.css" rel="stylesheet" type="text/css"
+        id="bs-default-stylesheet" />
+    <link href="../../../../static/backend/library/css/app.min.css" rel="stylesheet" type="text/css"
+        id="app-default-stylesheet" />
+
+    <link href="../../../../static/backend/library/css/bootstrap-dark.min.css" rel="stylesheet" type="text/css"
+        id="bs-dark-stylesheet" disabled />
+    <link href="../../../../static/backend/library/css/app-dark.min.css" rel="stylesheet" type="text/css"
+        id="app-dark-stylesheet" disabled />
+
+    <!-- icons -->
+    <link href="../../../../static/backend/library/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- ol -->
+    <link href="../../../../static/backend/library/libs/ol/ol.css" rel="stylesheet" type="text/css" />
+
+    <link href="../../../../static/backend/library/css/ol-ext/ol-ext.css" rel="stylesheet" type="text/css" />
+
+
+    <link href="../../../../static/frontend/custom/css/style.css" rel="stylesheet" type="text/css" />
+
+    <!--script-->
+
+    <script src="../../../../static/backend/library/js/jquery-3.1.1.min.js"></script>
+
+
+</head>
+
+<body data-layout-mode="horizontal" data-layout='{"mode": "light", "width": "fluid", "menuPosition": "fixed", "topbar": {"color": "dark"}, "showRightSidebarOnPageLoad": true}'>
+
+
+    <div id="wrapper">
+
+
+        
+
+ <div class="navbar-custom">
+    <div class="container-fluid">
+        <ul class="list-unstyled topnav-menu float-right mb-0">
+            
+            
+<li class="dropdown languages-list topbar-dropdown">
+  <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light"
+    data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"
+    >
+    <span class="pro-user-name ml-1">
+      Language<i class="mdi mdi-chevron-down"></i>
+    </span>
+  </a>
+  <div class="dropdown-menu dropdown-menu-right profile-dropdown">
+    
+    
+    
+    <form action="https://profile.damakmun.gov.np/en/i18n/setlang/" method="POST">
+      <input type="hidden" name="csrfmiddlewaretoken" value="pKZVcRmD6nultFABRHhxCYnWdjDbQIJ6WqLiSDAul2DhMk1NrEUvHTq7iPd5144C">
+      <input name="next" type="hidden" value="">
+      <select class="dropdown-item notify-item" name="language" onchange="this.form.submit()">
+        
+        <option value="en" selected>
+        English (en)
+        </option>
+        
+        <option value="ne">
+        Nepali (ne)
+        </option>
+        
+      </select>
+    </form>
+  </div>
+</li>
+
+            
+            <li class="nav-item ">
+                <a class="nav-link dropdown-toggle arrow-none" href="../../../login/index.html" role="button"
+                    aria-haspopup="true" aria-expanded="false">
+                  <i class="fe-package mr-1"></i>Login
+                </a>
+            </li>
+            
+
+
+        </ul>
+        <!-- LOGO -->
+        <div class="logo-box">
+            <a href="../../../index.html" class="logo logo-light text-center">
+                <!-- <span class="logo-sm">
+                    <img src="/static/backend/library/images/logo-dark.png" alt="" height="30"> Waling Municipality
+                </span>
+                <span class="logo-lg">
+                    <img src="/static/backend/library/images/logo-dark.png" alt="" height="50"> Waling Municipality
+                </span> -->
+                <span class="logo-sm">
+                  <img src="../../../../static/backend/library/images/logo-dark.png" alt="" height="30">
+                </span>
+                <span class="logo-lg">
+                  <img src="../../../../static/backend/library/images/logo-dark.png" alt="" height="50">Damak Municipality
+                </span>
+            </a>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+
+
+ <div class="topnav">
+     <div class="container-fluid">
+         <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
+
+             <div class="collapse navbar-collapse" id="topnav-menu-content">
+                 <ul class="navbar-nav">
+
+                     <li class="nav-item ">
+                         <a class="nav-link dropdown-toggle arrow-none" href="../../../index.html" role="button"
+                             aria-haspopup="true" aria-expanded="false">
+                           <i class="fe-airplay mr-1"></i> Home
+                         </a>
+
+                     </li>
+                     <li class="nav-item ">
+                         <a class="nav-link dropdown-toggle arrow-none" href="../../../map.html" role="button"
+                             aria-haspopup="true" aria-expanded="false">
+                           <i class="fe-book-open mr-1"></i> Map
+                         </a>
+
+                     </li>
+                     <li class="nav-item ">
+                         <a class="nav-link dropdown-toggle arrow-none" href="../../../fe/data-catalogue.html" role="button"
+                             aria-haspopup="true" aria-expanded="false">
+                           <i class="fe-book-open mr-1"></i>Catalogue
+                         </a>
+
+                     </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-apps-finance" role="button"
+                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <i class="fe-grid mr-1"></i> Finance <div class="arrow-down"></div>
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="topnav-apps-finance">
+                             <a href="../../../public-finance/fe/project/index.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 Project
+                             </a>
+                             <a href="../../../public-finance/fe/expenditure/index.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 Expenditure
+                             </a>
+                             <a href="../../../public-finance/fe/revenue/index.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 Revenue
+                             </a>
+                         </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-apps" role="button"
+                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <i class="fe-grid mr-1"></i> Service
+                             <div class="arrow-down"></div>
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="topnav-apps">
+                             
+                             
+                             <a href="../../../institution/fe-category/1.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 Economic Development
+                             </a>
+                             
+                             <a href="../../../institution/fe-category/2.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 Infrastructure
+                             </a>
+                             
+                             <a href="../../../institution/fe-category/3.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 Governance
+                             </a>
+                             
+                             <a href="../../../institution/fe-category/5.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 Education
+                             </a>
+                             
+                             <a href="../../../institution/fe-category/6.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 Health
+                             </a>
+                             
+                             <a href="../../../institution/fe-category/7.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 Public works
+                             </a>
+                             
+                             <a href="../../../institution/fe-category/8.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 Cultural Heritage
+                             </a>
+                             
+                             <a href="../../../institution/fe-category/4.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 Natural Resources
+                             </a>
+                             
+                             <a href="../../../institution/fe-category/10.html" class="dropdown-item">
+                                 <i class="fe-calendar mr-1"></i>
+                                 ATM
+                             </a>
+                             
+                             
+                         </div>
+                     </li>
+                     <li class="nav-item ">
+                         <a class="nav-link dropdown-toggle arrow-none" href="../../../about.html" role="button"
+                             aria-haspopup="true" aria-expanded="false">
+                           <i class="fe-sidebar mr-1"></i> About
+                         </a>
+
+                     </li>
+
+
+
+
+
+
+                 </ul> <!-- end navbar-->
+             </div> <!-- end .collapsed-->
+         </nav>
+     </div> <!-- end container-fluid -->
+ </div> <!-- end topnav-->
+
+
+
+
+
+        <div class="content-page" style="padding: 70px 15px 65px 15px;">
+            <div class="content">
+                <div class="container-fluid">
+
+                    
+
+
+<!-- start page title -->
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box">
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                  <li class="breadcrumb-item"><a href="https://profile.damakmun.gov.np/login?next=/en/dashboard">Damak</a></li>
+                  <li class="breadcrumb-item "><a href="https://profile.damakmun.gov.np/login?next=/en/dashboard">Dashboard</a></li>
+                  <li class="breadcrumb-item active"><a href="https://profile.damakmun.gov.np/login?next=/en/data-catalogue">Data Catalogue</a></li>
+                  <li class="breadcrumb-item active">Household Level</li>
+                </ol>
+            </div>
+            <h4 class="page-title">Household Data </h4>
+            <select class="form-control-sm form-control" style="width:15%;margin-bottom:1%;" id="selHouseholdWardLevel">
+              <option value="0">Municipality</option>
+              
+              <option value="1">Ward number - 1</option>
+              
+              <option value="2">Ward number - 2</option>
+              
+              <option value="3">Ward number - 3</option>
+              
+              <option value="4">Ward number - 4</option>
+              
+              <option value="5">Ward number - 5</option>
+              
+              <option value="6">Ward number - 6</option>
+              
+              <option value="7">Ward number - 7</option>
+              
+              <option value="8">Ward number - 8</option>
+              
+              <option value="9">Ward number - 9</option>
+              
+              <option value="10">Ward number - 10</option>
+              
+            </select>
+        </div>
+    </div>
+</div>
+<!-- end page title -->
+
+
+
+<div class="row">
+    <div class="col-md-3 col-xl-3">
+        <div class="widget-rounded-circle card-box">
+            <div class="row">
+                <div class="col-6">
+                    <div class="avatar-lg rounded bg-soft-primary">
+                        <i class="dripicons-wallet font-24 avatar-title text-primary"></i>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="text-right">
+                        <h3 class="text-dark mt-1"><span data-plugin="counterup">22,460</span></h3>
+                        <p class="text-muted mb-1 text-truncate">Total Household</p>
+                    </div>
+                </div>
+            </div> <!-- end row-->
+        </div> <!-- end widget-rounded-circle-->
+    </div> <!-- end col-->
+
+    <div class="col-md-3 col-xl-3">
+        <div class="widget-rounded-circle card-box">
+            <div class="row">
+                <div class="col-6">
+                    <div class="avatar-lg rounded bg-soft-success">
+                        <i class="dripicons-basket font-24 avatar-title text-success"></i>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="text-right">
+                        <h3 class="text-dark mt-1"><span data-plugin="counterup">5,431</span></h3>
+                        <p class="text-muted mb-1 text-truncate">Livestock</p>
+                    </div>
+                </div>
+            </div> <!-- end row-->
+        </div> <!-- end widget-rounded-circle-->
+    </div> <!-- end col-->
+
+    <div class="col-md-3 col-xl-3">
+        <div class="widget-rounded-circle card-box">
+            <div class="row">
+                <div class="col-6">
+                    <div class="avatar-lg rounded bg-soft-info">
+                        <i class="dripicons-store font-24 avatar-title text-info"></i>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="text-right">
+                        <h3 class="text-dark mt-1"><span data-plugin="counterup">4,918</span></h3>
+                        <p class="text-muted mb-1 text-truncate">Agriculture</p>
+                    </div>
+                </div>
+            </div> <!-- end row-->
+        </div> <!-- end widget-rounded-circle-->
+    </div> <!-- end col-->
+
+    <div class="col-md-3 col-xl-3">
+        <div class="widget-rounded-circle card-box">
+            <div class="row">
+                <div class="col-6">
+                    <div class="avatar-lg rounded bg-soft-warning">
+                        <i class="dripicons-user-group font-24 avatar-title text-warning"></i>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="text-right">
+                        <h3 class="text-dark mt-1"><span data-plugin="counterup">4,918</span></h3>
+                        <p class="text-muted mb-1 text-truncate">Agriculture</p>
+                    </div>
+                </div>
+            </div> <!-- end row-->
+        </div> <!-- end widget-rounded-circle-->
+    </div> <!-- end col-->
+</div>
+<!-- end row -->
+
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card-box">
+      <div class="row">
+
+        <div class="col-lg-4">
+          <h4 class="header-title mb-3">Select the variable for study</h4>
+          <select class="selectpicker  form-control-sm form-control" data-style="btn-light" id="selectVariable">
+            
+                <option value="qualityDrinkingWater">Quality of drinking water</option>
+            
+                <option value="waterPurificationMethod">Purification method</option>
+            
+                <option value="coookingFuel">Usually used cooking fuel</option>
+            
+                <option value="lighteningFuel">Usually used lighting fuel</option>
+            
+          </select>
+        </div>
+        <div class="col-lg-4">
+          <h4 class="header-title mb-3">Select the chart type for study</h4>
+          <select class="selectpicker  form-control-sm form-control" data-style="btn-light" id="selectChart">
+            <option value="horizantal-bar">Horizantal Bar Chart</option>
+            <option value="vertical-bar">Vertical Bar Chart</option>
+            <option value="pie">Pie Chart</option>
+            <option value="donut">Donut chart</option>
+          </select>
+        </div>
+        <div class="col-lg-4">
+         <div class="card-box">
+
+           <button type="button" class="btn btn-secondary waves-effect" id="drawChart-apply">Draw chart and table</button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+    <div class="card-box">
+      <h4 class="header-title mb-3">Chart view</h4>
+      <div class="" id="userDrawnChart" style="max-height: 500px">
+
+      </div>
+
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="card-box">
+      <h4 class="header-title mb-3">Table view</h4>
+      <div class="table-responsive" style="max-height: 500px">
+        <table id="userDrawnTable" class="table dt-responsive nowrap w-100" style="width:100%">
+
+        </table>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+var wid = 0
+
+$('#selHouseholdWardLevel option[value='+wid+']').attr("selected", "selected");
+
+</script>
+
+
+
+
+
+
+
+                </div><!-- container -->
+            </div><!-- content -->
+
+        </div><!-- End Page content -->
+
+
+<footer class="footer_area footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="single_ftr">
+                    <h4 class="sf_title">About</h4>
+                    <ul>
+                      <li>Damak Municipality, Jhapa District</li>
+                      <li>Province 1</li>
+                      <li>Phone: 023580137</li>
+                      <li>ict.damakmun@gmail.com</li>
+                    </ul>
+                </div>
+            </div> <!--  End Col -->
+
+            <div class="col-md-3 col-sm-6">
+                <div class="single_ftr">
+                    <h4 class="sf_title">Information</h4>
+                    <ul>
+                      <li><a href="../../../data.html">About Us</a></li>
+                      <li><a href="../../../map.html">Map Details</a></li>
+                      <li><a href="../../../data.html">Data Details</a></li>
+                      <li><a href="../../../about.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div> <!--  End Col -->
+
+
+
+            <div class="col-md-5 col-sm-6">
+                <div class="single_ftr">
+                    <div class="single_ftr">
+                      <h4 class="sf_title">Damak Municipality</h4>
+                    <!-- <div class="">
+
+
+                        <a href="/en/" class="text-center">
+                            <span class="logo-lg">
+                                <img src="/static/backend/library/images/smart.png" alt="" height="50">
+                            </span>
+                        </a>
+                    </div> -->
+                    <div class="newsletter_form">
+                        <p>
+                          
+                          Damak is one of the oldest municipalities in Jhapa District in Province 1 of Nepal.
+                          It is situated between the Ratuwa River in the east and the Maawa River in the west.
+                          It has Sivalik Hills in its north and ends with the intersection of Ratuwa River and
+                          Mawa River in the south. Mahendra Highway (longest highway of Nepal) crosses this municipality
+                          nearly bisecting it. It is the largest city in Jhapa District as well as in Mechi zone.
+                          
+
+                        </p>
+
+                    </div>
+                </div>
+            </div> <!--  End Col -->
+
+        </div>
+    </div>
+
+
+</footer>
+
+
+
+    </div><!-- END wrapper -->
+    <!-- end page -->
+
+
+    <!-- Vendor js -->
+    <script src="../../../../static/backend/library/js/vendor.min.js"></script>
+
+
+    <!-- Plugins js-->
+    <script src="../../../../static/backend/library/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+
+
+
+
+
+
+    <!-- third party js -->
+    <script src="../../../../static/backend/library/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../../../../static/backend/library/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../../../../static/backend/library/libs/datatables.net-responsive/js/dataTables.responsive.min.js">
+    </script>
+    <script src="../../../../static/backend/library/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js">
+    </script>
+    <script src="../../../../static/backend/library/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../../../../static/backend/library/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+    <script src="../../../../static/backend/library/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../../../../static/backend/library/libs/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="../../../../static/backend/library/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../../../../static/backend/library/libs/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="../../../../static/backend/library/libs/datatables.net-select/js/dataTables.select.min.js"></script>
+    <script src="../../../../static/backend/library/libs/pdfmake/build/pdfmake.min.html"></script>
+    <script src="../../../../static/backend/library/libs/pdfmake/build/vfs_fonts.html"></script>
+    <!-- third party js ends -->
+
+    <!-- Datatables init -->
+    <script src="../../../../static/backend/library/js/pages/datatables.init.js"></script>
+
+    <!-- App js -->
+    <script src="../../../../static/backend/library/js/app.min.js"></script>
+    <script src="../../../../static/frontend/custom/js/slider.js"></script>
+
+    <!-- ol -->
+    <script src="../../../../static/backend/library/libs/ol/ol.js"></script>
+    <script src="../../../../static/backend/library/js/ol-ext/ol-ext.js"></script>
+
+    <script src="../../../../static/backend/library/js/jquery-ui.min.js"></script>
+    <script src="../../../../static/backend/library/js/jquery.validate.min.js"></script>
+
+    <script src="../../../../static/backend/library/js/bootbox.min.js"></script>
+    <!-- custom -->
+    <script src="../../../../static/frontend/custom/js/layers.js"></script>
+    <script src="../../../../static/frontend/custom/js/map.js"></script>
+    <script src="../../../../static/frontend/custom/js/main.js"></script>
+
+    
+
+<!-- bootstrap select -->
+
+<!-- <script src="/static/backend/library/libs/bootstrap-select/js/bootstrap-select.min.js"></script> -->
+
+<!-- HIGHCHARTS -->
+<script src="../../../../static/backend/library/js/highcharts/highcharts.js"></script>
+<script src="../../../../static/backend/library/js/highcharts/exporting.js"></script>
+<script src="../../../../static/backend/library/js/highcharts/export-data.js"></script>
+
+<!-- ol -->
+<!-- <script src="/static/backend/library/libs/ol/ol.js"></script> -->
+
+
+<!-- custom -->
+<!-- <script src="/static/backend/custom/backend/js/layers.js"></script>
+<script src="/static/backend/custom/backend/js/map.js"></script>
+<script src="/static/backend/custom/backend/js/main.js"></script> -->
+
+<script src="../../../../static/backend/custom/backend/js/chartData.js"></script>
+<script src="../../../../static/backend/custom/backend/js/chart.js"></script>
+
+<script defer>
+var wid = 0
+$('#selHouseholdWardLevel option[value='+wid+']').attr("selected", "selected");
+$('#selHouseholdWardLevel').change((event) =>
+{
+  location.href = `/en/household/fe/data-catalogue/household-level?ward_id=${event.target.value}`;
+});
+</script>
+
+<script>
+  $(document).ready(function() {
+    var ward_id;
+    
+      ward_id=  0;
+    
+
+
+
+    
+      var wardChartOptionsForUsers = {'house': {'houseOwnershipType': 'Type of house ownership', 'landOwnershipType': 'Ownership of land', 'houseType': 'Type of house', 'drinkingWaterSource': 'Source of drinking water', 'tapWaterOwnershiptype': 'Ownership of tap water', 'tapWaterRestrictionFactor': 'Reason for not connected tap water', 'toiletType': 'Type of toilet used', 'solidWasteDisposal': 'Place of solid waste disposal', 'drainageFacilityYesNo': 'Have drainage facility', 'drainageFacilityType': 'Type of drainage facility', 'waterWasteDisposal': 'Place of waste water disposal'}, 'household': {'qualityDrinkingWater': 'Quality of drinking water', 'waterPurificationMethod': 'Purification method', 'coookingFuel': 'Usually used cooking fuel', 'lighteningFuel': 'Usually used lighting fuel'}, 'individual': {'nationality': 'Nationality', 'caste': 'Caste/Ethnicity', 'motherTongue': 'Mother tongue', 'religion': 'Religion', 'educationLevel': 'Level of education', 'specialSkill': 'Special skill', 'workSector': 'Sector of work', 'haveDisability': 'Have physical and mental disability', 'typeOfDisabilityCard': 'Type of disability card', 'sufferFromChronicDisease': 'Suffer from chronic diseases'}, 'business': {'nationality_of_business_owner': 'Nationality of business owner', 'nature_of_business': 'Nature of business', 'type_of_business': 'Type of business'}, 'absentee': {'reason_of_absent': 'Reason of absent', 'destination': 'Destination', 'country_of_destination': 'Place/Country of destination'}};
+      console.log(wardChartOptionsForUsers);
+      $('#selectTable').on('change', function(){
+        var tableSelected = $(this).val();
+        console.log(tableSelected);
+        $('#selectVariable').empty();
+        var htmlElement = ''
+        for (variable in wardChartOptionsForUsers[tableSelected] ) {
+          htmlElement += "<option value='" + variable +"'>" + wardChartOptionsForUsers[tableSelected][variable] +"</option>"
+        }
+        $('#selectVariable').append(htmlElement);
+      })
+      userChartDrawFunction();
+      $('#userColumnName').empty();
+      $('#userColumnName').append($('#selectVariable').find("option:selected").text());
+
+      $('#drawChart-apply').on('click', function(){
+        $('#userColumnName').empty();
+        $('#userColumnName').append($('#selectVariable').find("option:selected").text());
+        userChartDrawFunction();
+        userFilteredTable();
+
+      })
+
+      function userChartDrawFunction(){
+        if ($('#selHouseholdWardLevel').val()) {
+          ward_id = $('#selHouseholdWardLevel').val()
+        }
+        else {
+          ward_id=ward_id
+        }
+
+        var dataRequest = {
+          wid: ward_id,
+          table: 'household',
+          variable: $('#selectVariable').val()
+        }
+
+        $.get( "/en/data-catalogue/ajax-chart", dataRequest )
+          .done(function( data ) {
+
+            var data = data.chartData;
+            if ($('#selectChart').val() == 'horizantal-bar') {
+              var tempVariable = GenericBarChartdata(data)
+
+              GenericBarChart(tempVariable, 'userDrawnChart', $('#selectVariable').find("option:selected").text(), 'xAxisTitle', 'bar')
+            }
+            if ($('#selectChart').val() == 'vertical-bar') {
+              var tempVariable = GenericBarChartdata(data)
+
+              GenericBarChart(tempVariable, 'userDrawnChart', $('#selectVariable').find("option:selected").text(), 'xAxisTitle', 'column')
+            }
+            if ($('#selectChart').val() == 'pie') {
+              var tempVariable = GenericPieChartData(data)
+
+              genericPieChart(tempVariable, 'userDrawnChart', $('#selectVariable').find("option:selected").text(), 'xAxisTitle')
+            }
+            if ($('#selectChart').val() == 'donut') {
+              var tempVariable = GenericDonutChartData(data)
+
+              GenericDonutChart(tempVariable, 'userDrawnChart', $('#selectVariable').find("option:selected").text(), 'xAxisTitle')
+            }
+
+              var tempTableData = data;
+              var dataSet=[];
+
+              for (var i = 0; i < tempTableData['category'].length; i++) {
+                dataSet.push([tempTableData['category'][i],tempTableData['value'][i]])
+              }
+              $('#userDrawnTable').DataTable({
+                destroy: true,
+                dom: 'Bfrtip',
+                "buttons": [{
+                        extend: 'csv'
+                    },{
+                        extend: 'excel',
+                        title: 'ExampleFile'
+                    },{
+                        extend: 'pdf',
+                        title: 'ExampleFile'
+                    },{
+                        extend: 'print',
+                        customize: function (win) {
+                            $(win.document.body).addClass('white-bg');
+                            $(win.document.body).css('font-size', '10px');
+
+                            $(win.document.body).find('table')
+                                .addClass('compact')
+                                .css('font-size', 'inherit');
+                        }
+                    }
+                ],
+                data: dataSet,
+                columns: [
+                    { title: "Category" },
+                    { title: "Value" },
+                ]
+            });
+          });
+      }
+
+      function userFilteredTable(){
+        if ($('#selHouseholdWardLevel').val()) {
+          ward_id = $('#selHouseholdWardLevel').val()
+        }
+        else {
+          ward_id=ward_id
+        }
+
+        var userColumn = $('#selectVariable').val();
+
+      }
+
+      userFilteredTable();
+
+
+
+    
+
+  });
+
+  </script>
+
+
+
+
+
+</body>
+
+
+<!-- Mirrored from profile.damakmun.gov.np/en/household/fe/data-catalogue/household-level by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Feb 2023 16:57:28 GMT -->
+</html>

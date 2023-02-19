@@ -1,0 +1,19 @@
+{
+	"name": "apricity-municipality",
+	"homepage": "apricity-municipality.github.io",
+	"version": "1.0.0",
+	"description": "website for study purpose",
+	"main": "index.js",
+	"scripts": {
+		"deploy": "gh-pages -d en"
+	},
+	"keywords": [
+		"apricity",
+		"municipality"
+	],
+	"author": "Apricity Nepal Pvt. Ltd.",
+	"license": "MIT",
+	"devDependencies": {
+		"gh-pages": "^5.0.0"
+	}
+}
