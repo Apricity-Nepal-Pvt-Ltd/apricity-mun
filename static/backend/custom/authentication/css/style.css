@@ -1,0 +1,25 @@
+.logo-lg img {
+    height: 15vh;
+}
+
+body.authentication-bg {
+    background-color: #234a83;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #234a83;
+    border-color: #234a83;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #234a83;
+    border-color: #234a83;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #234a83;
+    background-color: #234a83;
+}

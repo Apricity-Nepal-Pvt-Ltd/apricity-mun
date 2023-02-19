@@ -1,0 +1,123 @@
+/* map */
+
+#frontendmap {
+    height: 100%;
+}
+
+.frontendlayers {
+    position: absolute;
+    height: 75%;
+    width: 12%;
+    padding: 15px;
+    top: 22%;
+    background: white;
+    left: 1%;
+    z-index: 1;
+}
+
+
+#tool {
+    position: absolute;
+    top: 20%;
+    right: .5%;
+    z-index: 1;
+}
+
+#tool .spatial-tool {
+    padding: 6px;
+    border-radius: 3px;
+    background: #234a83;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.fa-plus,
+.fa-bars,
+.fa-minus,
+.fa-home {
+    color: white;
+    border-radius: 2px;
+    margin-top: 2px;
+    margin-left: 3px;
+}
+
+.left-side-menu {
+    z-index: 1;
+    width: 210px;
+    background: #fff;
+    bottom: 0;
+    padding: 20px 0;
+    position: fixed;
+    transition: all .1s ease-out;
+    top: 70px;
+    box-shadow: 0 0 35px 0 rgba(154, 161, 171, .15);
+}
+
+.legend {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 8px;
+    margin-top: 2px;
+    margin-right: 2px;
+    z-index: 2;
+    padding: 10px;
+    background: white;
+    display: none;
+    max-height: 50vh;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.legend h5 {
+    font-size: 16px;
+    color: #234a83;
+    text-transform: capitalize;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.legend.visible {
+    display: inline-grid;
+}
+
+.feature-info {
+    position: absolute;
+    top: 51%;
+    left: 16%;
+    z-index: 2;
+    width: 250px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    background: #FFF;
+    color: #777;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    line-height: 26px;
+    display: none;
+}
+
+.feature-info.visible {
+    display: block;
+    padding: 10px;
+}
+
+.feature-info h4 {
+    background: #234a83;
+    color: white;
+    padding: 5px;
+    margin: -10px;
+    margin-bottom: 15px;
+}
+
+#tool .spatial-tool {
+    padding: 4px;
+    border-radius: 3px;
+    background: #234a83;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.icon-dual {
+    color: #ffffff;
+    fill: rgba(152, 166, 173, .12);
+}
